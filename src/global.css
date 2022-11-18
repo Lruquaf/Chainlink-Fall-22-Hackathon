@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+.navbar {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 0 15%;
+    background: #171925;
+}
+.title-block h1 {
+    position: relative;
+    color: #fff;
+    font-size: 26px;
+}
+.title-block h1 span {
+    position: absolute;
+    margin-top: -10px;
+    color: #474dff;
+    font-size: 37px;
+}
+.connect-block {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.class-button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    width: 156px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #474dff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+.class-button:hover {
+    background-color: #3f44df;
+}
+main {
+    width: 100%;
+    padding: 50px 15%;
+    color: #171924;
+}
+.infos-block {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.infos-block h2 {
+    font-weight: bolder;
+    font-size: 37px;
+}
+.infos-block h2 span {
+    font-weight: 500;
+    color: #3f44df;
+}
+.infos-block p {
+    color: #516070;
+}
+.infos-block p:first-child span:first-child {
+    font-weight: bolder;
+    color: #3f44df;
+}
+.infos-block p:first-child span:last-child {
+    font-weight: bolder;
+    color: #171925;
+}
+.infos-block p:last-child span {
+    font-weight: bolder;
+    color: #13151b;
+}
+.interaction-block {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+.interaction-block .class-button {
+    width: 178px;
+    height: 42px;
+    margin: 5px 0;
+}
+.interface {
+    margin: 50px 0;
+    width: 100%;
+    min-height: 500px;
+    border-radius: 10px;
+    background-color: #171925;
+    color: #fff;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+}
+.connection {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 0 0 25px;
+}
+.address {
+    margin-left: auto;
+    font-weight: 700;
+}
+.stakeBlock {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+.stakeBlock p {
+    margin: 0 0 5px;
+    font-size: 15px;
+}
+.stakeBlock p span {
+    color: #8B8CAD;
+    font-weight: 300;
+}
+.interface button {
+    margin: 15px 0;
+}
+.claimableBlock p {
+    font-size: 15px;
+    color: #8B8CAD;
+}
+.interface input {
+    font-family: inherit;
+    font-weight: 500;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #8B8CAD;
+    outline: 0;
+    font-size: 15px;
+    color: #8B8CAD;
+    padding: 5px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    margin: 10px 0;
+  }
+  .interface input::placeholder {
+    color: transparent;
+  }
+  .interface input:placeholder-shown ~ .amount_label {
+    font-size: 17px;
+    cursor: text;
+    top: 25px;
+  }
+  
+  .amount_label {
+    position: absolute;
+    top: 5px;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #8B8CAD;
+  }
+  
+  .interface input:focus {
+    padding-bottom: 6px;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #2b31df, #3f44df);
+    border-image-slice: 1;
+  }
+  .interface input:focus ~ .amount_label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .interface input:required, .interface input:invalid {
+    box-shadow: none;
+  }
+  .interface input:valid ~ .amount_label {
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 700;
+  }
+  .interface input:valid {
+    padding-bottom: 6px;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #2b31df, #3f44df);
+    border-image-slice: 1;
+  }
+  .group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70px;
+    position: relative;
+    margin: 10px 0;
+  }
+.interface select {
+    font-family: inherit;
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 5px;
+    margin: 0 0 10px;
+}
